@@ -1,4 +1,169 @@
 
+
+
+let calculation = '';
+
+
+function btn1()
+{
+     calculation += 1;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+}
+
+function btn2()
+{
+
+     calculation += 2;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+
+function btn3()
+{
+
+     calculation += 3;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+
+function btn4()
+{
+
+     calculation += 4;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+
+function btn5()
+{
+
+     calculation += 5;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+function btn6()
+{
+
+     calculation += 6;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+function btn7()
+{
+
+     calculation += 7;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+function btn8()
+{
+
+     calculation += 8;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+function btn9()
+{
+
+     calculation += 9;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+
+function btn10()
+{
+
+     calculation += 0;
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+function btn11()
+{
+
+     calculation += '.';
+    document.querySelector('.value1').innerHTML=  calculation;
+
+
+}
+
+
+/* adding----- */
+function btn41()
+{
+
+     calculation += ' + ';
+    document.querySelector('.value1').innerHTML=  calculation;
+}
+
+/* sub---- */
+function btn42()
+{
+
+     calculation += ' - ';
+    document.querySelector('.value1').innerHTML=  calculation;
+
+}
+
+/* multiply------ */
+function btn43()
+{
+
+     calculation += ' * ';
+    document.querySelector('.value1').innerHTML=  calculation;
+
+}
+
+/* percent------ */
+function btn44()
+{
+
+     calculation += ' % ';
+    document.querySelector('.value1').innerHTML=  calculation;
+
+}
+
+/* devided----- */
+function btn45()
+{
+
+     calculation += ' / ';
+    document.querySelector('.value1').innerHTML=  calculation;
+
+}
+
+function btneqal()
+{
+
+     calculation = eval(calculation);
+    document.querySelector('.value2').innerHTML= ' = '  +  calculation;
+
+}
+
+function btnreset()
+{
+  
+    calculation = '';
+    document.querySelector('.value1').innerHTML = calculation;
+    document.querySelector('.value2').innerHTML = calculation;
+
+}
+
+
+
+
+
+
+
 //two dimantional array---------
 /* function highestRunScorer(playerInfo)
 {
@@ -312,9 +477,15 @@ outer.removeChild(newheading);
  */
 
 
-let btn = document.querySelector(".classbtn");
+
+
+
+//gussing game
+
+/* let btn = document.querySelector(".classbtn");
 let output = document.querySelector(".classpara1");
-let number = [Math.floor(Math.random()*10)];
+let form = document.querySelector("form");
+let number = [Math.floor(Math.random()*10)]; */
 /* let timer ;
 let timeout = document.querySelector(".timeout");
 (function(){
@@ -325,7 +496,7 @@ let timeout = document.querySelector(".timeout");
     },1000)
 })() */
 
-function starCounter() {
+/* function starCounter() {
     let timeSet = 11;
     const timeSetElement = document.querySelector('.timeout');
 
@@ -342,16 +513,15 @@ function starCounter() {
         }
     }, 1000)
 }
-starCounter()
+starCounter() */
 
 
-btn.addEventListener('click',function()
+/* function btnclick()
 {
     let input = document.querySelector(".classinput").value;
     if (input == number)
     {
         output.innerHTML= "YOUR GUESS IS RIGHT";
-        let won = document.querySelector(".won");
         won.innerHTML = "CONGRATULATION!";
         
         
@@ -359,5 +529,207 @@ btn.addEventListener('click',function()
         output.innerHTML= " YOUR GUESS IS NOT RIGHT";
     }
    
-})
+} */
+
+
+
+/* add css with js-------------- */
+/* function firstbtn(){
+var para = document.querySelector("p");
+    para.classList.add("change1");
+}
+function secondbtn(){
+var para = document.querySelector("p");
+    para.classList.add("change2");
+} */
+
+
+
+
+//eventlistener-----------
+/* var para = document.querySelector("p");
+para.addEventListener("mouseover",function(){
+     
+    para.classList.add("style");
+});
+para.addEventListener("mouseout",function(){
+     
+    para.classList.remove("style");
+}); */
+
+
+
+//add multiple element with listner
+/* var len = document.querySelectorAll(".btn1").length;
+
+for(var i = 0; i<len; i++){
+
+    var first = document.querySelectorAll(".btn1")[i];
+    first.addEventListener("click",function(){
+    
+        var text = this.innerHTML;
+        document.querySelector("p").innerHTML = text + " i am good";
+    });
+
+    
+} */
+
+
+
+//add audio play with js
+/* for(var i = 0; i<3; i++){
+
+    var btn = document.querySelectorAll(".btn1")[i].addEventListener("click",function(){
+
+        var text = this.innerHTML;
+        console.log(text);
+        adioplay(text);
+
+    })
+}
+
+function adioplay(text){
+
+    switch(text){
+        case "first" :
+            var audio = new Audio('../audio/ad1.wav');
+             audio.play();
+             break;
+        case "second" :
+            var audio = new Audio('../audio/ad2.wav');
+             audio.play();
+             break;
+        case "third" :
+            var audio = new Audio('../audio/ad3.wav');
+             audio.play();
+             break;
+    }
+}
+ */
+
+
+
+//add animation--
+ /* for(var i = 0; i<3; i++){
+
+    var btn = document.querySelectorAll(".btn1")[i].addEventListener("click",function(){
+
+        var text = this.innerHTML;
+        console.log(text);
+        adioplay(text);
+        animation(text);
+
+    })
+}
+
+function adioplay(text){
+
+    switch(text){
+        case "first" :
+            var audio = new Audio("../audio/ad1.wav");
+             audio.play();
+             break;
+        case "second" :
+            var audio = new Audio("../audio/ad2.wav");
+             audio.play();
+             break;
+        case "third" :
+            var audio = new Audio("../audio/ad3.wav");
+             audio.play();
+             break;
+    }
+}
+
+function animation(text){
+ */
+    //var selectbtn1 = document.querySelector("." + text);
+    //selectbtn1.classList.add("animationhere");
+
+/*     var selectbtn1 = document.querySelector(".animate1");
+    selectbtn1.classList.add("animationhere");
+    var selectbtn2 = document.querySelector(".animate2");
+    selectbtn2.classList.add("animationhere");
+    var selectbtn2 = document.querySelector(".animate3");
+    selectbtn2.classList.add("animationhere");
+
+    setTimeout(function(){
+        selectbtn1.classList.remove("animationhere")
+    },1000);
+    
+}  */ 
+
+/* var count = 0 ;
+document.querySelector("#alltext").addEventListener("keypress",function(event){
+ count++;
+    var text = event.key;
+
+    document.querySelector("p").innerHTML = "Number of Charecters are : " + count ;
+}); */
+
+
+/* dom event------- */
+
+// Include qrious library in your HTML file.
+
+/* let text = "Hello world, welcome to the universe.";
+document.getElementById("demo").innerHTML = text.startsWith("world", 5); */
+
+
+
+/* -----------lesson-3----------------------- */
+//document.write("my name is :" + " 'dipto'")
+/* let basketball = 2095;
+let tshirt = 799;
+let shipping = 499; */
+
+//document.write("total cost: $" + (coffee + bagel)/100);
+//document.write(`total cost: $${(coffee + bagel)/100}`);
+/* alert(`total cost: $${(coffee + bagel)/100}
+Thank you. come again`); */
+
+ //document.write(`item (${2+2}): $${(basketball*2 + tshirt*2)/100}`);
+ //document.write(`shipping & handling : $${(shipping + shipping)/100}`);
+//document.write(`estimated tax(10%) : $${Math.round((2095*2 + 799*2 + 499 +499)*0.1)/100}`);
+
+
+
+/* ------------lesson-4---------------------- */
+/* function color1(){
+
+    alert("Added");
+
+}
+
+function color2(){
+
+    document.write("Loading");
+    alert("purches")
+
+} */
+
+
+
+/* --------------lesson-5------------------ */
+
+/* var names = "dipto";
+document.write(`my name is : ${names}`); */
+
+//var cost = 1*5 + 2*3 + 1*9 ;
+//document.write(`cost of food : $${cost}`); 
+
+//var tax = (cost*0.1);
+//document.write(`tax(10%) : $${tax}`);
+
+/* var totalcost = (cost + tax);
+document.write(`Total cost : $${totalcost}`); */
+
+
+
+/*-------------lesson-6------------------ */
+
+
+ 
+
+
+
 

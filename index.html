@@ -3,28 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>javascript</title>
+    <link rel="stylesheet" href="scss/style.css" />
+    <link rel="icon" href="img/calculate.png" type="image/x-icon">
+    <title>Calculator</title>
   </head>
   <body>
+ 
 
-    <div class="outer" id="outer">
-    <P class="timeout">10</P>
-      <h1>GUESSING GAME</h1>
-      <div class="inner">
-        <p class="classpara1">enter any number you want</p>
-        <input type="text" id="idinput" class="classinput" >
-        <button class="classbtn" id="idbtn">ENTER</button>
-      <p class="won"> PROCESSING...</p>
+  <div class="calculator">
 
-      </div>
-
+    <div class="result-mirror">
+      <a class="value1"> </a>
+      <a class="value2"> </a>
     </div>
-
-  
-
+   
+    <div class="all-numbers">
+      <button class="btn1" onclick="btn1()">1</button>
+      <button class="btn2" onclick="btn2()">2</button>
+      <button class="btn3" onclick="btn3()">3</button>
+      <button class="btn41" onclick="btn41()">+</button>
+    </div>
+    <div class="all-numbers">
+      <button class="btn1" onclick="btn4()">4</button>
+      <button class="btn2" onclick="btn5()">5</button>
+      <button class="btn3" onclick="btn6()">6</button>
+      <button class="btn42" onclick="btn42()">-</button>
+    </div>
+    <div class="all-numbers">
+      <button class="btn1" onclick="btn7()">7</button>
+      <button class="btn2" onclick="btn8()">8</button>
+      <button class="btn3" onclick="btn9()">9</button>
+      <button class="btn43" onclick="btn43()">*</button>
+    </div>
+    <div class="all-numbers">
+      <button class="btn1" onclick="btn10()">0</button>
+      <button class="btn2" onclick="btn11()">.</button>
+      <button class="btn44" onclick="btn44()">%</button>
+      <button class="btn45" onclick="btn45()">/</button>
+    </div>
+     
+    <div class="all-numbers2">
+      <button class="btneqal" onclick="btneqal()">=</button>
+      <button class="btnreset" onclick="btnreset()">C</button>
+    </div>
     
-
+    
+  </div>
+  
     <script src="main.js"></script>
   </body>
 </html>
+
+    
